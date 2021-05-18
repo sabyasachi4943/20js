@@ -1,4 +1,5 @@
 /* ROBOT.GIF from Giphy - https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
 html {
   box-sizing: border-box;
@@ -22,6 +23,19 @@ body {
   background-repeat: no-repeat;
 }
 
+.box {
+  height: 200px;
+  width: 600px;
+  background-color: #fff;
+  padding: 10px;
+  border: solid 3px black;
+  margin: 100px;
+  margin-left: 700px;
+}
+.box p {
+  color: rgb(0, 0, 0);
+  font-family: Lato, sans-serif;
+}
 button {
   cursor: pointer;
   outline: none;
