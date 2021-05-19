@@ -5,13 +5,14 @@ const value = document.getElementById('val');
 function toggleButton() {
   button.disabled = !button.disabled;
 }
+// http://www.voicerss.org/pricing/
 
 // VoiceRSS Speech Function
 function tellMe(joke) {
   const jokeString = joke.trim().replace(/ /g, '%20');
   // VoiceRSS Speech Parameters
   VoiceRSS.speech({
-    key: '585d216fe71f4b6597c4f2b8d254d552',
+    key: 'your_api_key',
     src: jokeString,
     hl: 'en-us',
     r: 0,
