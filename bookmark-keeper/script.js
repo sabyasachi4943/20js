@@ -74,19 +74,32 @@ function buildBookmarks() {
 // Fetch Bookmarks
 function fetchBookmarks() {
   // Get bookmarks from localStorage if available
-  if(localStorage.getItem('bookmarks')) {
+  if (localStorage.getItem('bookmarks')) {
     bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
   } else {
     // Create bookmarks array in localStorage
     bookmarks = [
       {
-        name: '',
-        url: '',
+        name: 'google',
+        url: 'https://google.com',
       },
     ];
     localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
   }
   buildBookmarks();
+}
+
+// Delete Bookmark
+function deleteBookmark(url) {
+  // Loop through the bookmarks array
+  bookmarks.forEach((bookmark, i) => {
+    if (bookmark.url === url) {
+      bookmarks.splice(i, 1);
+    }
+  });
+  // Update bookmarks array in localStorage, re-populate DOM
+  localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+  fetchBookmarks();
 }
 
 // Handle Data from Form
