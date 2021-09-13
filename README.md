@@ -11,6 +11,7 @@
 | animation-navigation | https://sabyasachi4943.github.io/20js/animation-navigation/ |
 | bookmark-keeper      |   https://sabyasachi4943.github.io/20js/bookmark-keeper/    |
 | custom-countdown     |   https://sabyasachi4943.github.io/20js/custom-countdown/   |
+| music-player         |     https://sabyasachi4943.github.io/20js/music-player/     |
 
 ##### some may not work cause I removed the api but might add some time later.
 
